@@ -26,3 +26,7 @@ The application allows users to connect with each other as friends and exchange 
     Single-user desktop application
     Focus on clean architecture and database interaction
 
+
+https://github.com/user-attachments/assets/3fdb4850-3dc8-4019-abf8-76482ff28056
+
+
