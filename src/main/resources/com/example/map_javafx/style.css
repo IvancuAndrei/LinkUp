@@ -1,0 +1,63 @@
+.root {
+    -fx-background-color: #313338;
+    -fx-font-family: "Inter";
+}
+
+.background-blur {
+    -fx-background-color: rgba(0,0,0,0.2);
+
+}
+
+.card {
+    -fx-background-color: #1e1f22;
+    -fx-padding: 28;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 25, 0, 0, 8);
+}
+
+.title {
+    -fx-text-fill: #f2f3f5;
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+.text-field,
+.password-field {
+    -fx-background-color: #383a40;
+    -fx-text-fill: #f2f3f5;
+    -fx-prompt-text-fill: #b5bac1;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #5865F2;
+    -fx-border-radius: 6;
+}
+
+.button {
+    -fx-background-color: #5865F2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+}
+
+.button:hover {
+    -fx-background-color: #4752c4;
+    -fx-cursor: hand;
+}
+
+.link {
+    -fx-text-fill: #00a8fc;
+}
+
+.link:hover {
+    -fx-underline: true;
+}
+
+.error-text {
+    -fx-text-fill: #f23f42;
+    -fx-font-size: 12;
+}

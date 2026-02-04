@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefWidth="700" prefHeight="420"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.map_javafx.LogInController"
+            stylesheets="@style.css"
+            styleClass="root">
+
+   <Pane styleClass="background-blur"
+         AnchorPane.topAnchor="0"
+         AnchorPane.bottomAnchor="0"
+         AnchorPane.leftAnchor="0"
+         AnchorPane.rightAnchor="0"/>
+
+   <StackPane AnchorPane.topAnchor="0"
+              AnchorPane.bottomAnchor="0"
+              AnchorPane.leftAnchor="0"
+              AnchorPane.rightAnchor="0">
+
+      <VBox styleClass="card" spacing="16" prefWidth="360">
+
+         <!-- TITLE -->
+         <VBox alignment="CENTER" spacing="8">
+            <Label text="Welcome to LinkUp" styleClass="title"/>
+            <Label text="Connect. Chat. Share." styleClass="subtitle"/>
+         </VBox>
+
+         <!-- LOGIN -->
+         <VBox fx:id="loginBox" spacing="10">
+            <TextField fx:id="textFieldUsernameLogIn" promptText="Username"/>
+            <PasswordField fx:id="passwordFieldPasswordLogIn" promptText="Password"/>
+
+            <Label fx:id="loginErrorLabel"
+                   text="Invalid username or password"
+                   visible="false"
+                   styleClass="error-text"/>
+
+            <Button text="Log In"
+                    maxWidth="Infinity"
+                    onAction="#handleLogIn"/>
+
+            <Hyperlink text="Need an account? Register"
+                       onAction="#showRegister"
+                       styleClass="link"/>
+         </VBox>
+
+         <!-- REGISTER -->
+         <VBox fx:id="registerBox" spacing="10" visible="false" managed="false">
+            <TextField fx:id="textFieldFirstNameSignUp" promptText="First Name"/>
+            <TextField fx:id="textFieldLastNameSignUp" promptText="Last Name"/>
+            <TextField fx:id="textFieldUsernameSignUp" promptText="Username"/>
+            <PasswordField fx:id="passwordFieldPasswordSignUp" promptText="Password"/>
+
+            <Label fx:id="registerErrorLabel"
+                   text="Username already exists"
+                   visible="false"
+                   styleClass="error-text"/>
+
+            <Button text="Create Account"
+                    maxWidth="Infinity"
+                    onAction="#handleSignUp"/>
+
+            <Hyperlink text="Already have an account? Log in"
+                       onAction="#showLogin"
+                       styleClass="link"/>
+         </VBox>
+
+      </VBox>
+   </StackPane>
+</AnchorPane>
